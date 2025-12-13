@@ -5,7 +5,7 @@ import { HeroModel } from './HeroModel';
 import { Atmosphere } from './Atmosphere';
 import { AtmosphereRig } from './AtmosphereRig';
 import { Ground } from './Ground';
-import { Particulates } from './Particulates';
+import { Particles } from './Particles'; // Import the new living ecosystem
 import * as THREE from 'three';
 
 // Add missing type definitions for R3F elements
@@ -71,14 +71,16 @@ export const HeroScene: React.FC<HeroSceneProps> = ({ children }) => {
                 {/* Hero Model: Procedural Liquid Sphere */}
                 <HeroModel />
                 
-                {/* Ground Elements - Clean, no grids */}
-                <Particulates />
+                {/* Dynamic Ecosystem */}
+                <Particles />
+                
+                {/* Ground Elements */}
                 <Ground />
                 
                 <Environment preset="city" /> 
             </Suspense>
             
-            {/* Fog - Initial args, but Color/Near/Far are strictly controlled by AtmosphereRig */}
+            {/* Fog - Color/Near/Far are strictly controlled by AtmosphereRig */}
             {/* @ts-ignore */}
             <fog attach="fog" args={['#e0f7fa', 5, 40]} />
 
