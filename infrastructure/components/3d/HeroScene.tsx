@@ -71,14 +71,14 @@ export const HeroScene: React.FC<HeroSceneProps> = ({ children }) => {
                 {/* Hero Model: Procedural Liquid Sphere */}
                 <HeroModel />
                 
-                {/* Ground Elements */}
+                {/* Ground Elements - Clean, no grids */}
                 <Particulates />
                 <Ground />
                 
                 <Environment preset="city" /> 
             </Suspense>
             
-            {/* Fog - Color updated by AtmosphereRig to blend with Ground */}
+            {/* Fog - Initial args, but Color/Near/Far are strictly controlled by AtmosphereRig */}
             {/* @ts-ignore */}
             <fog attach="fog" args={['#e0f7fa', 5, 40]} />
 

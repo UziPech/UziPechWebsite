@@ -5,7 +5,7 @@ import * as THREE from 'three';
 
 // Define colors for transition
 const SKY_COLOR = new THREE.Color('#e0f7fa'); // Light Cyan / Sky
-// STRICTLY MATCHES Ground.tsx color to create infinite horizon effect
+// STRICTLY MATCHES Ground.tsx color (#0b1d15) to create infinite horizon effect
 const GROUND_COLOR = new THREE.Color('#0b1d15'); 
 
 interface AtmosphereRigProps {
@@ -37,7 +37,7 @@ export const AtmosphereRig: React.FC<AtmosphereRigProps> = ({ starsRef }) => {
       // Ground (1): Fog is closer, creating atmosphere and hiding the floor edge
       // Decreased far plane at bottom to ensure seamless blend with background
       const fogNear = THREE.MathUtils.lerp(10, 5, r1); 
-      const fogFar = THREE.MathUtils.lerp(40, 30, r1);
+      const fogFar = THREE.MathUtils.lerp(40, 25, r1); // Tighter fog at bottom to blend floor
       
       // @ts-ignore - fog properties exist on Three.Fog
       scene.fog.near = fogNear;
