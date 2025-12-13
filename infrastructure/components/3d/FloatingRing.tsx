@@ -3,19 +3,9 @@ import { useFrame } from '@react-three/fiber';
 import { MeshDistortMaterial, Float } from '@react-three/drei';
 import * as THREE from 'three';
 
-// Add missing type definitions for R3F elements
-declare global {
-  namespace JSX {
-    interface IntrinsicElements {
-      mesh: any;
-      torusGeometry: any;
-    }
-  }
-}
-
 export const FloatingRing: React.FC = () => {
   const meshRef = useRef<THREE.Mesh>(null);
-  const materialRef = useRef<THREE.MeshPhysicalMaterial>(null);
+  const materialRef = useRef<any>(null);
 
   useFrame((state) => {
     if (meshRef.current) {

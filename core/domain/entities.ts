@@ -22,34 +22,36 @@ export interface Profile {
 }
 
 export const initialProfile: Profile = {
-  name: "Alex Architect",
-  title: "Creative Technologist",
-  tagline: "Bridging Nature & Digital Systems",
-  bio: "I build scalable digital ecosystems inspired by organic patterns. Specializing in Clean Architecture and 3D web experiences.",
+  name: "Uziel Castillo",
+  title: "Solutions Architect & Full Stack Developer",
+  tagline: "Transforming complex business needs into scalable digital ecosystems.",
+  bio: "Specializing in high-performance web applications, game development, and 3D commerce solutions.",
   projects: [
     {
       id: "1",
-      title: "EcoSphere",
-      description: "A real-time climate data visualization platform using WebGL.",
-      technologies: ["React", "Three.js", "GraphQL"],
+      title: "SaaS Gastronómico",
+      description: "A comprehensive point-of-sale system with Union Architecture.",
+      technologies: ["React", "POS Logic", "Union Arch"],
     },
     {
       id: "2",
-      title: "Neural Nest",
-      description: "AI-driven architecture generation tool for sustainable housing.",
-      technologies: ["Python", "TensorFlow", "Next.js"],
+      title: "Hospital Asset Manager",
+      description: "Asset tracking system featuring Neumorphism UI and role-based access.",
+      technologies: ["Flutter", "Neumorphism", "Role Mgmt"],
     },
     {
       id: "3",
-      title: "Flux Finance",
-      description: "High-frequency trading dashboard with hexagonal architecture.",
-      technologies: ["TypeScript", "WebSocket", "D3.js"],
+      title: "Vivero 3D Shop",
+      description: "Immersive e-commerce experience integrating game development logic.",
+      technologies: ["3D Commerce", "Game Dev", "WebGL"],
     }
   ],
   skills: [
-    { id: "1", name: "React / Next.js", category: "frontend" },
-    { id: "2", name: "Three.js / WebGL", category: "frontend" },
-    { id: "3", name: "Node.js", category: "backend" },
-    { id: "4", name: "System Design", category: "architecture" },
+    { id: "1", name: "Flutter (Flame Engine)", category: "frontend" },
+    { id: "2", name: "React 19", category: "frontend" },
+    { id: "3", name: "Supabase", category: "backend" },
+    { id: "4", name: "MongoDB", category: "backend" },
+    { id: "5", name: "Python", category: "backend" },
+    { id: "6", name: "Node.js", category: "backend" },
   ]
 };
