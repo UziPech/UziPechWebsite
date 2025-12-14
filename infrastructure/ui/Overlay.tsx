@@ -12,10 +12,7 @@ export const Overlay: React.FC = () => {
   return (
     <div className="w-full max-w-7xl mx-auto flex flex-col relative z-10 pointer-events-none">
       
-      {/* SECTION 1: THE SKY (Intro) 
-          - Alignment: Center
-          - Text: Dark (Forest-900)
-      */}
+      {/* SECTION 1: THE SKY (Intro) */}
       <Section id="intro" className="text-center">
         <div className="max-w-4xl mx-auto space-y-8 animate-fade-in-up pointer-events-auto">
             <div className="inline-block px-4 py-1.5 rounded-full bg-forest-900/5 border border-forest-900/10 backdrop-blur-sm">
@@ -34,10 +31,7 @@ export const Overlay: React.FC = () => {
         </div>
       </Section>
 
-      {/* SECTION 2: THE PROCESS (Philosophy)
-          - Alignment: Center Left
-          - Text: Transitioning to darker
-      */}
+      {/* SECTION 2: THE PROCESS (Philosophy) */}
       <Section id="process">
         <div className="w-full max-w-4xl mr-auto pl-10 md:pl-0 pointer-events-auto">
              <div className="mb-8 opacity-80 mix-blend-color-burn">
@@ -55,15 +49,12 @@ export const Overlay: React.FC = () => {
         </div>
       </Section>
 
-      {/* SECTION 3: THE TOOLKIT 
-          - Alignment: Right Side (using self-end on container)
-          - Text: White (Background is darkening)
-      */}
+      {/* SECTION 3: THE TOOLKIT */}
       <Section id="toolkit">
         <div className="w-full md:w-1/2 lg:w-5/12 self-end md:mr-10 pointer-events-auto">
              <div className="p-10 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 shadow-2xl my-10 transform transition-transform hover:scale-[1.02] duration-500">
                 <div className="mb-4 border-b border-white/20 pb-4">
-                    <LiquidTitle className="text-4xl font-serif text-white">
+                    <LiquidTitle className="text-4xl md:text-6xl font-serif text-white mb-8">
                         The Toolkit
                     </LiquidTitle>
                 </div>
@@ -82,18 +73,13 @@ export const Overlay: React.FC = () => {
         </div>
       </Section>
 
-      {/* SECTION 4: SELECTED WORKS (Visual Art Pieces)
-          - Alignment: Center
-          - Text: White
-      */}
+      {/* SECTION 4: SELECTED WORKS */}
       <Section id="works">
         <div className="w-full max-w-6xl my-10 pointer-events-auto">
             <div className="text-center mb-16">
-                <div className="mb-2">
-                    <LiquidTitle className="text-5xl font-serif text-white">
-                        Selected Works
-                    </LiquidTitle>
-                </div>
+                <LiquidTitle className="text-5xl md:text-7xl font-serif text-white mb-10">
+                    Selected Works
+                </LiquidTitle>
                 <p className="text-mist-300 font-mono text-sm tracking-widest uppercase">Visual Portals</p>
             </div>
             
@@ -105,22 +91,14 @@ export const Overlay: React.FC = () => {
         </div>
       </Section>
 
-      {/* SECTION 5: COLLABORATION (The Core)
-          - Alignment: Center
-          - Text: White/Neon
-      */}
+      {/* SECTION 5: COLLABORATION */}
       <Section id="contact" className="text-center">
-        <div className="relative z-10 pointer-events-auto space-y-8">
+        <div className="relative z-10 pointer-events-auto space-y-8 flex flex-col items-center">
             <p className="text-emerald-400 font-mono tracking-[0.3em] uppercase text-sm animate-pulse">System Status: Waiting for Input</p>
             
-            <div className="flex flex-col items-center">
-                <LiquidTitle className="text-6xl md:text-8xl font-serif text-white font-bold block">
-                    Ready to build
-                </LiquidTitle>
-                <LiquidTitle className="text-6xl md:text-8xl font-serif text-white font-bold block mt-2">
-                    the future?
-                </LiquidTitle>
-            </div>
+            <LiquidTitle className="text-4xl md:text-5xl font-bold text-white mb-6 text-center leading-tight">
+                Ready to build the future?
+            </LiquidTitle>
 
             <div className="pt-8">
                 <a 
