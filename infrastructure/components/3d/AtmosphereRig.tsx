@@ -57,8 +57,10 @@ export const AtmosphereRig: React.FC<AtmosphereRigProps> = ({ starsRef }) => {
     // Only visible in the dark section (bottom half)
     if (starsRef.current) {
         const mat = starsRef.current.material as THREE.PointsMaterial;
-        // Start fading in after 50% scroll, fully visible at 90%
-        const starOpacity = THREE.MathUtils.smoothstep(r1, 0.5, 0.9);
+        // Adjusted for 5 pages: 
+        // Start fading in earlier (around page 2/Toolkit ~ 0.3-0.4) 
+        // Fully visible by page 4 (Deep Space ~ 0.8)
+        const starOpacity = THREE.MathUtils.smoothstep(r1, 0.3, 0.8);
         
         if (mat) {
             mat.transparent = true;

@@ -48,7 +48,7 @@ export const HeroScene: React.FC<HeroSceneProps> = ({ children }) => {
         {/* @ts-ignore */}
         <pointLight position={[-10, -10, -10]} intensity={0.5} color="#264033" />
 
-        <ScrollControls pages={3} damping={0.2}>
+        <ScrollControls pages={5} damping={0.2}>
             {/* Logic Layer - Drives Scene State */}
             <AtmosphereRig starsRef={starsRef} />
 

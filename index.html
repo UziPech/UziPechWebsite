@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Hex 3D</title>
+    <script>
+      // Shim for libraries that expect Node.js process.env (like framer-motion)
+      window.process = { env: { NODE_ENV: 'production' } };
+    </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
@@ -71,7 +75,8 @@
     "@react-three/fiber": "https://esm.sh/@react-three/fiber@^9.4.2",
     "gsap": "https://esm.sh/gsap@^3.14.2",
     "gsap/": "https://esm.sh/gsap@^3.14.2/",
-    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7"
+    "@react-three/drei": "https://esm.sh/@react-three/drei@^10.7.7",
+    "framer-motion": "https://esm.sh/framer-motion@11.0.8?external=react,react-dom"
   }
 }
 </script>
